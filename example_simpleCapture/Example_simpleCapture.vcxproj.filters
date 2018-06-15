@@ -1,21 +1,237 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="src\testApp.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\testApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Base.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\FactoryRegister.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\NullDevice.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\OSXUVC.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\StillImages.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoInput.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoPlayer.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Frame.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Base.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Grabber</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Simple.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Grabber</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Parameter.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Specification.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\DiskStreamer.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\Recorder.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\ActionQueueThread.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\FramePool.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision.cpp">
+      <Filter>addons\ofxMachineVision\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\FactoryRegister.cpp">
+      <Filter>addons\ofxPlugin\src\ofxPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.cpp">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.cpp">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
       <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxLiquidEvent">
+      <UniqueIdentifier>{529D7BB5-392B-0172-E901-104A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxLiquidEvent\src">
+      <UniqueIdentifier>{68B1F917-D2DC-C23A-76D3-6342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision">
+      <UniqueIdentifier>{C7F915BE-CDD6-5A04-1AED-F868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src">
+      <UniqueIdentifier>{EF1F18EE-81C6-9384-CEBE-302E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src\ofxMachineVision">
+      <UniqueIdentifier>{2DF98A20-D48F-C454-25B2-1142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src\ofxMachineVision\Device">
+      <UniqueIdentifier>{DAA988B8-8CE1-8DA3-7E39-A4E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src\ofxMachineVision\Grabber">
+      <UniqueIdentifier>{CBD602C7-59E7-B1A0-4651-2BF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src\ofxMachineVision\Stream">
+      <UniqueIdentifier>{D228718F-ECB3-B820-4D31-E806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src\ofxMachineVision\Utils">
+      <UniqueIdentifier>{6EF994DC-5892-E858-AB04-0CC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPlugin">
+      <UniqueIdentifier>{438285C7-EEBF-1ED4-8D4C-4503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPlugin\src">
+      <UniqueIdentifier>{1A5320AF-92A2-B78A-5248-E9DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPlugin\src\ofxPlugin">
+      <UniqueIdentifier>{3588C245-E45B-E4F0-6FE2-518B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSingleton">
+      <UniqueIdentifier>{3DFBBEA6-8D0A-F20E-0949-CA62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSingleton\src">
+      <UniqueIdentifier>{9AE25DD0-A34B-B543-F9E7-0489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSingleton\src\ofxSingleton">
+      <UniqueIdentifier>{C50808D9-E231-A03E-7F39-80ED}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\testApp.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxLiquidEvent\src\ofxLiquidEvent.h">
+      <Filter>addons\ofxLiquidEvent\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Constants.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Base.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Blocking.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Callback.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\FactoryRegister.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\NullDevice.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\OSXUVC.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\OSXUVCDevice.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\StillImages.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Types.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Updating.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoInput.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoPlayer.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Frame.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Base.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Simple.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Parameter.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Specification.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\DiskStreamer.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\Recorder.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\ActionQueueThread.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\FramePool.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision.h">
+      <Filter>addons\ofxMachineVision\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\BaseModule.h">
+      <Filter>addons\ofxPlugin\src\ofxPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\Factory.h">
+      <Filter>addons\ofxPlugin\src\ofxPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\FactoryRegister.h">
+      <Filter>addons\ofxPlugin\src\ofxPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\Plugin.h">
+      <Filter>addons\ofxPlugin\src\ofxPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin.h">
+      <Filter>addons\ofxPlugin\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.h">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.h">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Singleton.h">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\UnmanagedSingleton.h">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton.h">
+      <Filter>addons\ofxSingleton\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
   </ItemGroup>
 </Project>

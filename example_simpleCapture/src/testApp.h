@@ -20,5 +20,6 @@ public:
 	void dragEvent(ofDragInfo dragInfo);
 	void gotMessage(ofMessage msg);
     
-    ofxMachineVision::SimpleGrabber<ofxMachineVision::Device::Webcam> camera;
+    //ofxMachineVision::SimpleGrabber<ofxMachineVision::Device::Webcam> camera;
+	ofxMachineVision::SimpleGrabber<ofxMachineVision::Device::Webcam> camera;
 };
