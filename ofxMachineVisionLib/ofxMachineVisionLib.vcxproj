@@ -172,11 +172,6 @@
     <ClCompile Include="..\src\ofxMachineVision\Utils\ActionQueueThread.cpp" />
     <ClCompile Include="..\src\ofxMachineVision\Utils\FramePool.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\addons\ofxPlugin\ofxPluginLib\ofxPluginLib.vcxproj">
-      <Project>{68b9239b-5ae6-45c0-b1cb-6fc6b58bb6ee}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -26,6 +26,7 @@ namespace ofxMachineVision {
 
 			void reopen(); // also restarts capture if currently alive
 
+			bool isSingleShot() const;
 			bool isFrameNew() const { return this->currentFrameNew; }
 			float getFps() const { return this->fps; }
 			chrono::nanoseconds getLastTimestamp() const { return this->lastTimestamp; }

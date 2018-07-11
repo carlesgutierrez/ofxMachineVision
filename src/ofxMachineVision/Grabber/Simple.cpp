@@ -249,6 +249,11 @@ namespace ofxMachineVision {
 		}
 
 		//----------
+		bool Simple::isSingleShot() const {
+			return this->specification.getCaptureSequenceType() == CaptureSequenceType::OneShot;
+		}
+
+		//----------
 		shared_ptr<Frame> Simple::getFreshFrame(chrono::microseconds timeout) {
 			shared_ptr<Frame> frame;
 
