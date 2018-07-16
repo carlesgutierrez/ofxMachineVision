@@ -1,0 +1,5 @@
+ofxLiquidEvent
+ofxMachineVision
+ofxPlugin
+ofxSingleton
+ofxSpinnaker
