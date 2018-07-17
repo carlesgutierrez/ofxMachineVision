@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\testApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Base.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\FactoryRegister.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\NullDevice.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\OSXUVC.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\StillImages.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoInput.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoPlayer.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Frame.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Base.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Grabber</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Simple.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Grabber</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Parameter.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Specification.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\DiskStreamer.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\Recorder.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\ActionQueueThread.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\FramePool.cpp">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision.cpp">
+      <Filter>addons\ofxMachineVision\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\FactoryRegister.cpp">
+      <Filter>addons\ofxPlugin\src\ofxPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.cpp">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.cpp">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxSpinnaker\src\ofxMachineVision\Device\Spinnaker.cpp">
+      <Filter>addons\ofxSpinnaker\src\ofxMachineVision\Device</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxLiquidEvent">
+      <UniqueIdentifier>{529D7BB5-392B-0172-E901-104A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxLiquidEvent\src">
+      <UniqueIdentifier>{68B1F917-D2DC-C23A-76D3-6342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision">
+      <UniqueIdentifier>{C7F915BE-CDD6-5A04-1AED-F868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src">
+      <UniqueIdentifier>{EF1F18EE-81C6-9384-CEBE-302E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src\ofxMachineVision">
+      <UniqueIdentifier>{2DF98A20-D48F-C454-25B2-1142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src\ofxMachineVision\Device">
+      <UniqueIdentifier>{DAA988B8-8CE1-8DA3-7E39-A4E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src\ofxMachineVision\Grabber">
+      <UniqueIdentifier>{CBD602C7-59E7-B1A0-4651-2BF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src\ofxMachineVision\Stream">
+      <UniqueIdentifier>{D228718F-ECB3-B820-4D31-E806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMachineVision\src\ofxMachineVision\Utils">
+      <UniqueIdentifier>{6EF994DC-5892-E858-AB04-0CC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPlugin">
+      <UniqueIdentifier>{438285C7-EEBF-1ED4-8D4C-4503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPlugin\src">
+      <UniqueIdentifier>{1A5320AF-92A2-B78A-5248-E9DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPlugin\src\ofxPlugin">
+      <UniqueIdentifier>{3588C245-E45B-E4F0-6FE2-518B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSingleton">
+      <UniqueIdentifier>{3DFBBEA6-8D0A-F20E-0949-CA62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSingleton\src">
+      <UniqueIdentifier>{9AE25DD0-A34B-B543-F9E7-0489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSingleton\src\ofxSingleton">
+      <UniqueIdentifier>{C50808D9-E231-A03E-7F39-80ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker">
+      <UniqueIdentifier>{1795003F-94F3-160B-4F86-D6FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\src">
+      <UniqueIdentifier>{9B55B64F-36C6-DAD0-95CF-2501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\src\ofxMachineVision">
+      <UniqueIdentifier>{ED16649C-A939-2016-2B89-B4FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\src\ofxMachineVision\Device">
+      <UniqueIdentifier>{34663420-4A32-07D4-430B-E09C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\libs">
+      <UniqueIdentifier>{AA416350-A225-66A2-47F7-EDD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\libs\Spinnaker">
+      <UniqueIdentifier>{541CF20F-C616-B430-1B6F-AE62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\libs\Spinnaker\include">
+      <UniqueIdentifier>{1EEB8C95-1C42-B6FE-222F-7EEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker">
+      <UniqueIdentifier>{3ABA8994-C530-7D55-4A07-34BA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI">
+      <UniqueIdentifier>{B733BCF3-F81A-64EF-91E6-F5EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML">
+      <UniqueIdentifier>{50B4C7E9-64A8-764A-9E19-8387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface">
+      <UniqueIdentifier>{8247C8CD-B173-E400-49E9-3363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc">
+      <UniqueIdentifier>{B7DFC660-5AB6-A8DD-ED57-1C63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi">
+      <UniqueIdentifier>{8B410987-70A5-B767-BEFF-7ED3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\testApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxLiquidEvent\src\ofxLiquidEvent.h">
+      <Filter>addons\ofxLiquidEvent\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Constants.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Base.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Blocking.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Callback.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\FactoryRegister.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\NullDevice.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\OSXUVC.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\OSXUVCDevice.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\StillImages.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Types.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Updating.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoInput.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoPlayer.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Frame.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Base.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Simple.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Grabber</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Parameter.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Specification.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\DiskStreamer.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\Recorder.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\ActionQueueThread.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\FramePool.h">
+      <Filter>addons\ofxMachineVision\src\ofxMachineVision\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision.h">
+      <Filter>addons\ofxMachineVision\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\BaseModule.h">
+      <Filter>addons\ofxPlugin\src\ofxPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\Factory.h">
+      <Filter>addons\ofxPlugin\src\ofxPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\FactoryRegister.h">
+      <Filter>addons\ofxPlugin\src\ofxPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\Plugin.h">
+      <Filter>addons\ofxPlugin\src\ofxPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin.h">
+      <Filter>addons\ofxPlugin\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.h">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.h">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Singleton.h">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\UnmanagedSingleton.h">
+      <Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton.h">
+      <Filter>addons\ofxSingleton\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\src\ofxMachineVision\Device\Spinnaker.h">
+      <Filter>addons\ofxSpinnaker\src\ofxMachineVision\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\src\ofxSpinnaker.h">
+      <Filter>addons\ofxSpinnaker\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\ArrivalEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\AVIRecorder.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\BasePtr.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Camera.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\CameraBase.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\CameraDefs.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\CameraList.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\CameraPtr.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\ChunkData.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\DeviceEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Event.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Exception.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\CameraSelection.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\CameraSelectionDlg.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\CameraSelectionWidget.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\PropertyGrid.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\PropertyGridDlg.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\PropertyGridWidget.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML\rapidxml.hpp">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML\rapidxml_iterators.hpp">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML\rapidxml_print.hpp">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML\rapidxml_utils.hpp">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\SpinnakerGUI.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\SpinnakerGUI_WPF.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\Viewer.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\ViewerDlg.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\ViewerWidget.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Image.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\ImageEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\ImagePtr.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\ImageStatistics.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IArrivalEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\ICameraBase.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\ICameraList.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IChunkData.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IDeviceEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IImage.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IImageEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IImageStatistics.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IInterface.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IInterfaceEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IInterfaceList.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\ILoggingEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IRemovalEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\ISystem.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\InterfaceEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\InterfaceList.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\InterfacePtr.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\LoggingEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\LoggingEventData.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\LoggingEventDataPtr.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\RemovalEvent.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\CameraDefsC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\ChunkDataDefC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\QuickSpinC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\QuickSpinDefsC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinnakerC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinnakerDefsC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinnakerGenApiC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinnakerGenApiDefsC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinnakerPlatformC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinVideoC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\TransportLayerDefsC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\TransportLayerDeviceC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\TransportLayerInterfaceC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\TransportLayerStreamC.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Autovector.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Base.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\BooleanNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\CategoryNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkAdapter.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkAdapterDcam.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkAdapterGeneric.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkAdapterGEV.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkAdapterU3V.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkPort.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\CommandNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Compatibility.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Container.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Counter.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EnumClasses.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EnumEntryNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EnumNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EnumNodeT.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventAdapter.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventAdapter1394.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventAdapterGeneric.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventAdapterGEV.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventAdapterU3V.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventPort.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Filestream.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\FloatNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\FloatRegNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCBase.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCString.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCStringVector.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCSynch.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCTypes.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCUtilities.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IBoolean.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ICategory.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IChunkPort.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ICommand.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IDestroy.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IDeviceInfo.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IEnumEntry.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IEnumeration.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IEnumerationT.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IFloat.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IInteger.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\INode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\INodeMap.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\INodeMapDyn.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IntegerNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IntRegNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IPort.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IPortConstruct.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IPortRecorder.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IRegister.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ISelector.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ISelectorDigit.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IString.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IValue.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Node.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\NodeCallback.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\NodeCallbackImpl.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\NodeMap.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\NodeMapFactory.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\NodeMapRef.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Persistence.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Pointer.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\PortImpl.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\PortNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\PortRecorder.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\PortReplay.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\PortWriteList.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Reference.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\RegisterNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\RegisterPortImpl.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\SelectorSet.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\SpinnakerGenApi.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\SpinTestCamera.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\StringNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\StringRegNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\StructPort.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Synch.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Types.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ValueNode.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Spinnaker.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinnakerDefs.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinnakerPlatform.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinVideo.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinVideoDefs.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\System.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SystemPtr.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\TransportLayerDefs.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\TransportLayerDevice.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\TransportLayerInterface.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\TransportLayerStream.h">
+      <Filter>addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>

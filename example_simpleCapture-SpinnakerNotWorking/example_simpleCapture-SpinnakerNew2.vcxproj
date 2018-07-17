@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>example_simpleCapture-SpinnakerNew2</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+    <Import Project="..\..\ofxSpinnaker\ofxSpinnakerLib\ofxSpinnaker.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+    <Import Project="..\..\ofxSpinnaker\ofxSpinnakerLib\ofxSpinnaker.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+    <Import Project="..\..\ofxSpinnaker\ofxSpinnakerLib\ofxSpinnaker.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+    <Import Project="..\..\ofxSpinnaker\ofxSpinnakerLib\ofxSpinnaker.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxLiquidEvent\src;..\..\..\addons\ofxMachineVision\src;..\..\..\addons\ofxMachineVision\src\ofxMachineVision;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils;..\..\..\addons\ofxPlugin\src;..\..\..\addons\ofxPlugin\src\ofxPlugin;..\..\..\addons\ofxSingleton\src;..\..\..\addons\ofxSingleton\src\ofxSingleton;..\..\..\addons\ofxSpinnaker\libs;..\..\..\addons\ofxSpinnaker\libs\Spinnaker;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share\icons;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share\icons\hicolor;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64\Release;..\..\..\addons\ofxSpinnaker\src;..\..\..\addons\ofxSpinnaker\src\ofxMachineVision;..\..\..\addons\ofxSpinnaker\src\ofxMachineVision\Device</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);Spinnakerd_v140.dll</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32\Debug</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxLiquidEvent\src;..\..\..\addons\ofxMachineVision\src;..\..\..\addons\ofxMachineVision\src\ofxMachineVision;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils;..\..\..\addons\ofxPlugin\src;..\..\..\addons\ofxPlugin\src\ofxPlugin;..\..\..\addons\ofxSingleton\src;..\..\..\addons\ofxSingleton\src\ofxSingleton;..\..\..\addons\ofxSpinnaker\libs;..\..\..\addons\ofxSpinnaker\libs\Spinnaker;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share\icons;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share\icons\hicolor;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64\Release;..\..\..\addons\ofxSpinnaker\src;..\..\..\addons\ofxSpinnaker\src\ofxMachineVision;..\..\..\addons\ofxSpinnaker\src\ofxMachineVision\Device</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);Spinnakerd_v140.dll</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64\Debug</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxLiquidEvent\src;..\..\..\addons\ofxMachineVision\src;..\..\..\addons\ofxMachineVision\src\ofxMachineVision;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils;..\..\..\addons\ofxPlugin\src;..\..\..\addons\ofxPlugin\src\ofxPlugin;..\..\..\addons\ofxSingleton\src;..\..\..\addons\ofxSingleton\src\ofxSingleton;..\..\..\addons\ofxSpinnaker\libs;..\..\..\addons\ofxSpinnaker\libs\Spinnaker;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share\icons;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share\icons\hicolor;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64\Release;..\..\..\addons\ofxSpinnaker\src;..\..\..\addons\ofxSpinnaker\src\ofxMachineVision;..\..\..\addons\ofxSpinnaker\src\ofxMachineVision\Device</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);Spinnaker_v140.dll</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32\Release</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxLiquidEvent\src;..\..\..\addons\ofxMachineVision\src;..\..\..\addons\ofxMachineVision\src\ofxMachineVision;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream;..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils;..\..\..\addons\ofxPlugin\src;..\..\..\addons\ofxPlugin\src\ofxPlugin;..\..\..\addons\ofxSingleton\src;..\..\..\addons\ofxSingleton\src\ofxSingleton;..\..\..\addons\ofxSpinnaker\libs;..\..\..\addons\ofxSpinnaker\libs\Spinnaker;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\Win32\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share\icons;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\hicolor-icon-theme\share\icons\hicolor;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\Win32\Release;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64\Debug;..\..\..\addons\ofxSpinnaker\libs\Spinnaker\lib\x64\Release;..\..\..\addons\ofxSpinnaker\src;..\..\..\addons\ofxSpinnaker\src\ofxMachineVision;..\..\..\addons\ofxSpinnaker\src\ofxMachineVision\Device</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);Spinnaker_v140.dll</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxSpinnaker\libs\Spinnaker\bin\vs\x64\Release</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\testApp.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Base.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\FactoryRegister.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\NullDevice.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\OSXUVC.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\StillImages.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoInput.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoPlayer.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Frame.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Base.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Simple.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Parameter.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Specification.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\DiskStreamer.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\Recorder.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\ActionQueueThread.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\FramePool.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\FactoryRegister.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxSpinnaker\src\ofxMachineVision\Device\Spinnaker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\testApp.h" />
+    <ClInclude Include="..\..\..\addons\ofxLiquidEvent\src\ofxLiquidEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Constants.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Base.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Blocking.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Callback.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\FactoryRegister.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\NullDevice.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\OSXUVC.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\OSXUVCDevice.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\StillImages.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Types.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\Updating.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoInput.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Device\VideoPlayer.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Frame.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Base.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Grabber\Simple.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Parameter.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Specification.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\DiskStreamer.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Stream\Recorder.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\ActionQueueThread.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision\Utils\FramePool.h" />
+    <ClInclude Include="..\..\..\addons\ofxMachineVision\src\ofxMachineVision.h" />
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\BaseModule.h" />
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\Factory.h" />
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\FactoryRegister.h" />
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin\Plugin.h" />
+    <ClInclude Include="..\..\..\addons\ofxPlugin\src\ofxPlugin.h" />
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.h" />
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.h" />
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Singleton.h" />
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\UnmanagedSingleton.h" />
+    <ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\src\ofxMachineVision\Device\Spinnaker.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\src\ofxSpinnaker.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\ArrivalEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\AVIRecorder.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\BasePtr.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Camera.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\CameraBase.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\CameraDefs.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\CameraList.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\CameraPtr.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\ChunkData.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\DeviceEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Event.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Exception.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\CameraSelection.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\CameraSelectionDlg.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\CameraSelectionWidget.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\PropertyGrid.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\PropertyGridDlg.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\PropertyGridWidget.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML\rapidxml.hpp" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML\rapidxml_iterators.hpp" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML\rapidxml_print.hpp" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\RapidXML\rapidxml_utils.hpp" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\SpinnakerGUI.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\SpinnakerGUI_WPF.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\Viewer.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\ViewerDlg.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\GUI\ViewerWidget.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Image.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\ImageEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\ImagePtr.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\ImageStatistics.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IArrivalEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\ICameraBase.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\ICameraList.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IChunkData.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IDeviceEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IImageEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IImageStatistics.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IInterface.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IInterfaceEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IInterfaceList.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\ILoggingEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\IRemovalEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface\ISystem.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Interface.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\InterfaceEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\InterfaceList.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\InterfacePtr.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\LoggingEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\LoggingEventData.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\LoggingEventDataPtr.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\RemovalEvent.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\CameraDefsC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\ChunkDataDefC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\QuickSpinC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\QuickSpinDefsC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinnakerC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinnakerDefsC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinnakerGenApiC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinnakerGenApiDefsC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinnakerPlatformC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\SpinVideoC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\TransportLayerDefsC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\TransportLayerDeviceC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\TransportLayerInterfaceC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\spinc\TransportLayerStreamC.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Autovector.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Base.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\BooleanNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\CategoryNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkAdapter.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkAdapterDcam.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkAdapterGeneric.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkAdapterGEV.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkAdapterU3V.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ChunkPort.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\CommandNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Compatibility.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Container.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Counter.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EnumClasses.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EnumEntryNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EnumNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EnumNodeT.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventAdapter.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventAdapter1394.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventAdapterGeneric.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventAdapterGEV.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventAdapterU3V.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\EventPort.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Filestream.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\FloatNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\FloatRegNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCBase.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCString.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCStringVector.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCSynch.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCTypes.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\GCUtilities.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IBoolean.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ICategory.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IChunkPort.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ICommand.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IDestroy.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IDeviceInfo.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IEnumEntry.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IEnumeration.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IEnumerationT.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IFloat.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IInteger.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\INode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\INodeMap.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\INodeMapDyn.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IntegerNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IntRegNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IPort.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IPortConstruct.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IPortRecorder.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IRegister.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ISelector.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ISelectorDigit.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IString.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\IValue.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Node.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\NodeCallback.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\NodeCallbackImpl.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\NodeMap.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\NodeMapFactory.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\NodeMapRef.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Persistence.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Pointer.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\PortImpl.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\PortNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\PortRecorder.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\PortReplay.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\PortWriteList.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Reference.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\RegisterNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\RegisterPortImpl.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\SelectorSet.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\SpinnakerGenApi.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\SpinTestCamera.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\StringNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\StringRegNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\StructPort.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Synch.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\Types.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinGenApi\ValueNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\Spinnaker.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinnakerDefs.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinnakerPlatform.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinVideo.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SpinVideoDefs.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\System.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\SystemPtr.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\TransportLayerDefs.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\TransportLayerDevice.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\TransportLayerInterface.h" />
+    <ClInclude Include="..\..\..\addons\ofxSpinnaker\libs\Spinnaker\include\spinnaker\TransportLayerStream.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ofxSpinnaker\ofxSpinnakerLib\ofxSpinnaker.vcxproj">
+      <Project>{82e035b1-8706-4571-9774-53990d679319}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ofxMachineVisionLib\ofxMachineVisionLib.vcxproj">
+      <Project>{cd4455e0-0454-4c3c-bb42-9d15d16a34dd}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="icon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
